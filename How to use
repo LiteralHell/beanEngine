@@ -1,0 +1,22 @@
+How to use the Say function
+
+To make the program say something, you need to do "Say("your message here");".
+
+How to use the WaitSeconds function
+
+To make the program wait, you need to do "WaitSeconds(the number of seconds here);"
+
+How to use the WaitForPlayerAnswer function
+
+To use the WaitForPlayerAnswer function you can either set a string value to it and put your question in it as an argument and refrence it:
+
+String yourstring = WaitForPlayerAnswer("your question here")
+if (yourstring == "the answer you want"){
+    do what you want here
+}
+
+Or you can put it directly into the if statement:
+
+if (WaitForPlayerAnswer("your question here") == "the answer you want"){
+    do what you want here
+}
