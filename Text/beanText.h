@@ -46,9 +46,9 @@ void textLine(string lineText)
 }
 
 // really dodgy spaghetti-code way of clearing the screen.
-void clearScreen()
+void clearScreen(int size)
 {
-    for( int a = 10; a < 100; a = a + 1 ) {
+    for( int a = 10; a < size; a = a + 1 ) {
         lineBreak(); // oh god the jankiness
     }
 }
