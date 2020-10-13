@@ -23,20 +23,25 @@
  */
 
 #include <iostream>
+#include <string>
 #include "say.h"
 
 using namespace std;
 
-int main()
+void textLine(string lineText)
 {
-    say("Hello");
-    textLine("Hello");
-    say("This is a test. Below this is a line break.");
+    int dashNum = lineText.length(); // netbeans seems to hate this
+    while (dashNum > 0)
+    {
+        cout << "-";
+        dashNum = dashNum - 1;
+    }
+    
     lineBreak();
-    
-    say("Press any key to clear the screen...");
-    cin.get();
-    clearScreen(100);
-    
-    return 0;
+}
+
+void sayLine(string sayText)
+{
+    say(sayText);
+    textLine(sayText);
 }

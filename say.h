@@ -22,21 +22,31 @@
  * THE SOFTWARE.
  */
 
-#include <iostream>
-#include "say.h"
+/* 
+ * File:   say.h
+ * Author: Scott Looker
+ *
+ * Created on 11 October 2020, 19:21
+ */
 
-using namespace std;
+#ifndef SAY_H
+#define SAY_H
 
-int main()
-{
-    say("Hello");
-    textLine("Hello");
-    say("This is a test. Below this is a line break.");
-    lineBreak();
+#ifdef __cplusplus
+extern "C++" {
+#endif
+
+    using namespace std;
     
-    say("Press any key to clear the screen...");
-    cin.get();
-    clearScreen(100);
-    
-    return 0;
+    void say(string sayText);
+    void lineBreak();
+    void textLine(string lineText);
+    void clearScreen(int size);
+
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif /* SAY_H */
+

@@ -23,20 +23,12 @@
  */
 
 #include <iostream>
+#include <string>
 #include "say.h"
 
 using namespace std;
 
-int main()
+void say(string sayText)
 {
-    say("Hello");
-    textLine("Hello");
-    say("This is a test. Below this is a line break.");
-    lineBreak();
-    
-    say("Press any key to clear the screen...");
-    cin.get();
-    clearScreen(100);
-    
-    return 0;
+    cout << sayText << endl;
 }

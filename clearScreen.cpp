@@ -27,16 +27,11 @@
 
 using namespace std;
 
-int main()
+/* thanks to eyeseeyouwell for some slight mods to this code
+ * i have carried these across into the rewrite */
+void clearScreen(int size)
 {
-    say("Hello");
-    textLine("Hello");
-    say("This is a test. Below this is a line break.");
-    lineBreak();
-    
-    say("Press any key to clear the screen...");
-    cin.get();
-    clearScreen(100);
-    
-    return 0;
+    for( int a = 10; a < size; a = a + 1 ) {
+        lineBreak();
+    }
 }
